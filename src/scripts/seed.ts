@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import Site from '../lib/models/Site';
 import { getDefaultSiteData } from '../lib/defaultSiteData';
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://amr122_db_user:sadsatof00@cluster0.vxx3bi8.mongodb.net/?appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI || '';
 
 async function seed() {
     await mongoose.connect(MONGODB_URI);
